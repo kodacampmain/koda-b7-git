@@ -59,3 +59,22 @@ $ git clone [url]
 $ git clone [url] [namaFolder]
 ```
 namaFolder diberikan jika menginginkan nama folder yang berbeda dengan nama repo
+
+## **7. History**
+- ``log`` = riwayat commit publik
+```sh
+$ git log
+```
+- ``reflog`` = riwayat git yang lebih private, tidak hanya riwayat commit namun juga riwayat lain seperti ``pull``, ``reset`` dan ``revert``
+```sh
+$ git reflog
+```
+## **8. Undoing Changes**
+- ``revert`` = menghilangkan commit dengan commit revert yang baru
+```sh
+$ git revert [commit_code]
+```
+- ``reset`` = mundur ke titik commit tertentu
+```sh
+$ git reset [commit_code]
+```
