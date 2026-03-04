@@ -10,7 +10,7 @@ $ git init
 $ git add [filepath...]
 ```
 
-### **3. Commit (permanent changes)**
+## **3. Commit (permanent changes)**
 ```sh
 $ git commit [option] [argument]
 ```
@@ -26,3 +26,36 @@ $ git commit -m "type: description"
 ```sh
 $ git commit
 ```
+
+## **4. Remote Repository**
+- ``remote`` command
+```sh
+$ git remote [command] [argument]
+```
+```sh
+# view remote list
+$ git remote
+# add remote repository
+$ git remote add [remote_name] [remote_url]
+# view remote url
+$ git remote get-url [remote_name]
+```
+
+- Sinkronisasi dengan ``push`` dan ``pull``
+```sh
+# sinkronisasi dari lokal ke remote
+$ git push [remote_name] [branch_name]
+# sinkronisasi dari remote ke lokal
+$ git pull [remote_name] [branch_name]
+```
+
+## **5. Config**
+## **6. Cloning**
+Replikasi identik
+```sh
+# jika ingin menggunakan nama folder sama dengan nama repo
+$ git clone [url]
+# jika ingin menggunakan nama folder berbeda dari naam repo
+$ git clone [url] [namaFolder]
+```
+namaFolder diberikan jika menginginkan nama folder yang berbeda dengan nama repo
